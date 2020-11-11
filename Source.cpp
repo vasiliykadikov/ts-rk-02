@@ -75,14 +75,16 @@ int main() {
         std::cout << "   " << generations[i].x_chrom << " " << generations[i].y_chrom << " " << generations[i].FIT << "\n";
     }
     std::cout << "   max: " << generations[3].FIT << " middle: " << middleFIT(generations);
-    for (auto i = 0; i < 15; ++i) {
+    for (auto i = 0; i < 100; ++i) {
         mutation(generations, x_min, y_min, x_max, y_max);
         crossover(generations);
-        std::cout << "\n" << i + 1;
-        for (auto i = 0; i < 4; ++i) {
-            std::cout << "   " << generations[i].x_chrom << " " << generations[i].y_chrom << " " << generations[i].FIT << "\n";
+        if (i <= 10 || i % 10 == 9) {
+            std::cout << "\n" << i + 1;
+            for (auto i = 0; i < 4; ++i) {
+                std::cout << "   " << generations[i].x_chrom << " " << generations[i].y_chrom << " " << generations[i].FIT << "\n";
+            }
+            std::cout << "   max: " << generations[3].FIT << " middle: " << middleFIT(generations);
         }
-        std::cout << "   max: " << generations[3].FIT << " middle: " << middleFIT(generations);
     }
     return 0;
 }
