@@ -4,6 +4,7 @@
 ```
 ## График функции:
 ![alt text](https://github.com/vasiliykadikov/ts-rk-02/blob/main/2020-11-11_17-37-59.png)
+![alt text](https://github.com/vasiliykadikov/ts-rk-02/blob/main/2020-11-11_18-21-45.png)
 
 ## Результаты выполнения программы: 
 ![alt text](https://github.com/vasiliykadikov/ts-rk-02/blob/main/2020-11-11_17-50-02.png)
